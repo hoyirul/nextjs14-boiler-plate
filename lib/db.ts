@@ -1,3 +1,8 @@
+/* 
+  Author  : Mochammad Hairullah
+  Path    : /app/lib/db.ts
+*/
+
 import { Pool } from 'pg';
 
 const pool = new Pool({
