@@ -24,11 +24,8 @@ export default function LoginPage() {
     setFieldErrors({});
 
     try {
-      console.log(form);
       const res = await apiV1.post("/auth/login", form);
       const data = res.data;
-
-      console.log(data);
 
       if (data.success) {
         // Save token to cookies (or localStorage)
